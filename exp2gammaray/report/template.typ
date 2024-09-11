@@ -188,7 +188,7 @@
   }
 
   // customize look of figure
-  set figure.caption(separator: [ :: ], position: top)
+  set figure.caption(separator: [ :: ], position: bottom)
 
   // customize inline raw code
   show raw.where(block: false) : it => h(0.5em) + box(fill: code-color.lighten(70%), outset: 0.2em, it,radius: 2pt) + h(0.5em)
@@ -351,7 +351,8 @@
     style: "institute-of-electrical-and-electronics-engineers",
   )
 
-  bibliography("refs.bib")
+//  bibliography("refs.bib")
+  
 
 }
 
