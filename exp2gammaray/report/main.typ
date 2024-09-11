@@ -32,6 +32,7 @@
 
 // start editing from here
 = Introduction
+In this experiment we have studied $gamma$ ray absorption by lead using a Na-22 $gamma$ ray source and a Geiger-Müller Counter. We also verified the inverse square law for $gamma$ radiation.
 = Theory
 == Geiger–Müller Counter
 A Geiger–Müller Counter (GM counter) is an electronic device that lets us detect the presence of ionizing radiation. It detects radiations such as $alpha$, $beta$, and $gamma$ rays using the ioinisation effect produced by these rays in a GM tube. 
@@ -60,3 +61,14 @@ The GM tube counts these "pulses" and gives them as a readout, displayed either 
 
 === Limitations
 As we can clearly see, each pulse detected using the GM tube will be of the same magnitude, regardless of the type of radiation. A GM counter is only good for detecting the presence of radiation, and the rate of radiation. It cannot give us any information about the energy of the radiation. Also, as discussed above, since a GM tube will have a "dead time", at very high radiation rates, which will lead to a decreased reading being put out by the counter.
+
+== Mass Attenuation
+
+== Inverse Square Law
+We can treat the used $gamma$ ray source as a point source, emmiting photons in all directions. In a spherically symmetric manner. Then, as we change the distance between the source and the detector, the number of particles falling into the detector clearly reduces. This can be better illustrated using the diagram below. 
+
+#figure(
+  image("Images/inverse-square.jpg", width: 50%),
+)
+
+Then, the number of partices falling on a detector of area $A$ at a distance $r$ is proportional to $A/r^2$. Hence, the counts should follow an inverse square law with respect to the distance from the detector. 
