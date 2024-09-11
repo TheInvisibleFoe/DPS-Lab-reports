@@ -14,7 +14,7 @@
   year: "",
   class: "",
   main-color: "#239b56",
-  bib: "refs.bib",
+  bib: "",
 )
 
 
