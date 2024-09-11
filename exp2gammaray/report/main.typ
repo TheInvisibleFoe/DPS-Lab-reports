@@ -63,6 +63,22 @@ The GM tube counts these "pulses" and gives them as a readout, displayed either 
 As we can clearly see, each pulse detected using the GM tube will be of the same magnitude, regardless of the type of radiation. A GM counter is only good for detecting the presence of radiation, and the rate of radiation. It cannot give us any information about the energy of the radiation. Also, as discussed above, since a GM tube will have a "dead time", at very high radiation rates, which will lead to a decreased reading being put out by the counter.
 
 == Mass Attenuation
+The experiment is used to find the mass attenuation coefficient of Pb for $gamma$ rays. We define attenuation is the gradual loss of flux intensity through a medium. Here quantify the attenuation of $gamma$ rays when they move through Pb plates. 
+
+The linear attenuation coefficient characterizes how easily a volume of material can be penetrated by a beam of light, sound, particles, or other energy or matter, or in this case $gamma$ rays. The mass attenuation coefficient is then defined as the linear attenuation coefficient normalized by the density of the medium.
+The linear attenuation coefficient, attenuation coefficient, or narrow-beam attenuation coefficient characterizes how easily a volume of material can be penetrated by a beam of light, sound, particles, or other energy or matter
+We define the linear attenuation coefficient as 
+#nonum($mu = -1/Phi (d Phi)/(d z)$)
+where 
+- $mu$ = The Linear attenuation coefficient.
+- $rho$ = The density of the medium.
+- $Phi$ = The flux at z.
+- $z$ = The path length travelled by the beam.
+
+On solving we get our working formula as (assuming $mu$ doesnt depend on $z$) to be:
+#nonum($I = I_0 e^(-mu/rho rho z)$)
+where we have the $mu/rho$ to be the mass attenuation coefficient.
+
 
 == Inverse Square Law
 We can treat the used $gamma$ ray source as a point source, emmiting photons in all directions. In a spherically symmetric manner. Then, as we change the distance between the source and the detector, the number of particles falling into the detector clearly reduces. This can be better illustrated using the diagram below. 
@@ -72,3 +88,11 @@ We can treat the used $gamma$ ray source as a point source, emmiting photons in 
 )
 
 Then, the number of partices falling on a detector of area $A$ at a distance $r$ is proportional to $A/r^2$. Hence, the counts should follow an inverse square law with respect to the distance from the detector. 
+
+= Determination of mass attenuation coefficient
+
+#figure(
+  image("Images/logcorr.png", width:120%),
+  caption: "Linear fit to determine the mass attenutaion coefficient",
+
+)
