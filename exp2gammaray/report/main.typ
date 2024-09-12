@@ -205,4 +205,4 @@ Thus, the value of the half-value thickness is $7.372 m m$.
 The possible errors in this experiment are -
 1. Introduction of secondary radiation sources in the evironment of the experimental setup after taking the background radiation reading and while the experiment is being conducted - This can change the count rate due to sources other than the intended radiation source, thereby affecting the results.
 2. Voltage fluctuation in the electronic instruments used - This may affect the count rate as expressed by the GM counter.
-3. 
+3. While measuring the mass attenuation coefficient, there were small air gaps between the lead plates. This leads to an error in the counts due to some surface scattering effects. Also, if all the lead plates are not parallel to each other, that would introduce an error in the measurement of the thickness. However, this error should be very minimal, since GM counter is very small.
