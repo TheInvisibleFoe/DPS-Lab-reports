@@ -63,10 +63,9 @@ The GM tube counts these "pulses" and gives them as a readout, displayed either 
 As we can clearly see, each pulse detected using the GM tube will be of the same magnitude, regardless of the type of radiation. A GM counter is only good for detecting the presence of radiation, and the rate of radiation. It cannot give us any information about the energy of the radiation. Also, as discussed above, since a GM tube will have a "dead time", at very high radiation rates, which will lead to a decreased reading being put out by the counter.
 
 == Mass Attenuation
-The experiment is used to find the mass attenuation coefficient of Pb for $gamma$ rays. We define attenuation is the gradual loss of flux intensity through a medium. Here quantify the attenuation of $gamma$ rays when they move through Pb plates.
+The experiment is used to find the mass attenuation coefficient of Pb for $gamma$ rays. We define attenuation to be the gradual loss of flux intensity through a medium. Here we quantify the attenuation of $gamma$ rays when they move through Pb plates.
 
 The linear attenuation coefficient characterizes how easily a volume of material can be penetrated by a beam of light, sound, particles, or other energy or matter, or in this case $gamma$ rays. The mass attenuation coefficient is then defined as the linear attenuation coefficient normalized by the density of the medium.
-The linear attenuation coefficient, attenuation coefficient, or narrow-beam attenuation coefficient characterizes how easily a volume of material can be penetrated by a beam of light, sound, particles, or other energy or matter
 We define the linear attenuation coefficient as
 #nonum($mu = -1/Phi (d Phi)/(d z)$)
 where
@@ -81,7 +80,7 @@ where we have the $mu/rho$ to be the mass attenuation coefficient.
 
 
 == Inverse Square Law
-We can treat the used $gamma$ ray source as a point source, emmiting photons in all directions. In a spherically symmetric manner. Then, as we change the distance between the source and the detector, the number of particles falling into the detector clearly reduces. This can be better illustrated using the diagram below.
+We can treat the used $gamma$ ray source as a point source, emitting photons in all directions. In a spherically symmetric manner. Then, as we change the distance between the source and the detector, the number of particles falling into the detector clearly reduces. This can be better illustrated using the diagram below.
 
 #figure(
   image("Images/inverse-square.jpg", width: 50%),
@@ -94,6 +93,7 @@ Background radiation is a measure of the level of ionizing radiation present in 
 In the case of our experiment, the environment may have some amount of $gamma$ radiation present. It is important to measure the amount of background radiation so that we can correct our count rate reading from the GM counter by subtracting the count rate due to the background reading.
 
 == Table 1 (Background reading)
+#set align(center)
 
 #table(
 columns: (auto,auto,auto),
@@ -109,14 +109,17 @@ table.header(
 
 *Average count rate:* 0.281 $s^(-1)$
 
+#set align(left)
 = Determination of mass attenuation coefficient
 
 == Table 2 (Measurement of thickness of plates)
 *Zero error on the screw gauge:* 0.00 mm
 
 *Least count of the screw gauge:* 0.01 mm
-
-#image("Images/thickness.png")
+#figure(
+  image("Images/thick.jpeg", width:100%),
+  caption: "Linear fit to determine the mass attenuation coefficient",
+)
 
 == Table 2 (Count rate vs. Thickness)
 
@@ -165,23 +168,15 @@ table.cell(rowspan: 2)[120], table.cell(rowspan: 2)[12.68], [67],table.cell(rows
 )
 
 The data plotted was fitted with the equation -
-$
-y(x) = a x + b
-$
+#nonum($y(x) = a x + b$)
 with the fit giving us the values of the coefficients -
-$
-a = -0.094
-$
-$
-b = 0.06
-$
+#nonum($a = -0.094 plus.minus 0.008$)
+#nonum($b = 0.06 plus.minus 0.07$)
 The density of lead is known to be $rho = 1.1343 times 10^(4) k g dot m^(-3) = 1.1343 times 10^(-2) g dot m m^(-3)$
 From analysing the expression for the mass attenuation coefficient, we find that -
-$
-mu / rho = (0.094) (1/rho) = (0.094) (1/1.1343) (100) g^(-1) m m ^(2) = 8.287 g^(-1) m m ^(2)
-$
+#nonum($mu / rho = (0.094) (1/rho) = (0.094) (1/1.1343) (100) g^(-1) m m ^(2) = 8.287 g^(-1) m m ^(2)$)
 
-Thus, the value of the mass attenuation coefficient is found to be $8.287 g^(-1) m m ^(2)$.
+Thus, the value of the mass attenuation coefficient is found to be $(8.2 plus.minus 0.7) g^(-1) m m ^(2)$.
 
 = Calculation of half value thickness
 Half value thickness is the thickness of the absorber at which the value of the incident intensity is attentuated to half of its initial value.
@@ -195,9 +190,19 @@ $
 z_h = 0.693 / 0.094 m m = 7.372 m m
 $
 
-Thus, the value of the half-value thickness is $7.372 m m$.
+Thus, the value of the half-value thickness is $7.37 plus.minus 0.06 m m$.
 
 = Verification of inverse square law
+#figure(
+  image("Images/inversever.png", width:120%),
+  caption: "Verification of Inverse Square Law",
+)
+
+We represent the data in a log(Counts) vs log(distance) graph, given as
+#nonum($&log(I) = a log(x) + b \ 
+  =>&y = a x +b
+  $)
+We fit the data with a linear fit to obtain a to be $-1.72plus.minus 0.03$ and b to be $8.52 plus.minus 0.06$.
 
 
 
