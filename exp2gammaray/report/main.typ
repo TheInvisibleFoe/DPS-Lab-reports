@@ -133,7 +133,7 @@ The density of lead is known to be $rho = 1.1343 times 10^(4) k g dot m^(-3) = 1
 From analysing the expression for the mass attenuation coefficient, we find that -
 #nonum($mu / rho = (0.094) (1/rho) = (0.094) (1/1.1343) (100) g^(-1) m m ^(2) = 8.287 g^(-1) m m ^(2)$)
 
-Thus, the value of the mass attenuation coefficient is found to be $(8.2 plus.minus 0.7) g^(-1) m m ^(2)$.
+Thus, the value of the mass attenuation coefficient is found to be $(8.3 plus.minus 0.7) g^(-1) m m ^(2)$.
 
 = Calculation of half value thickness
 Half value thickness is the thickness of the absorber at which the value of the incident intensity is attentuated to half of its initial value.
