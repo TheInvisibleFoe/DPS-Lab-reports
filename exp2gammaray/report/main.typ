@@ -92,7 +92,6 @@ Then, the number of partices falling on a detector of area $A$ at a distance $r$
 Background radiation is a measure of the level of ionizing radiation present in the environment at a particular location which is not due to deliberate introduction of radiation sources.
 In the case of our experiment, the environment may have some amount of $gamma$ radiation present. It is important to measure the amount of background radiation so that we can correct our count rate reading from the GM counter by subtracting the count rate due to the background reading.
 
-== Table 1 (Background reading)
 #set align(center)
 
 #table(
@@ -110,6 +109,7 @@ table.header(
 *Average count rate:* 0.281 $s^(-1)$
 
 #set align(left)
+#pagebreak()
 = Determination of mass attenuation coefficient
 
 == Measurement of thickness of plates
@@ -121,7 +121,7 @@ table.header(
 
 #figure(
   image("Images/logcorr.png", width:120%),
-  caption: "Linear fit to determine the mass attenutaion coefficient",
+  caption: "Linear fit to determine the mass attenuation coefficient",
 )
 
 The data plotted was fitted with the equation -
@@ -139,13 +139,9 @@ Thus, the value of the mass attenuation coefficient is found to be $(8.2 plus.mi
 Half value thickness is the thickness of the absorber at which the value of the incident intensity is attentuated to half of its initial value.
 
 We note that,
-$
-I_0 / 2 = I_0 exp(-(mu/rho) rho z_h) => z_h = ln(1/2)/(- (mu/rho) rho)  
-$
+#nonum($I_0 / 2 = I_0 exp(-(mu/rho) rho z_h) => z_h = ln(1/2)/(- (mu/rho) rho)  $)
 Putting in the values, we get,
-$
-z_h = 0.693 / 0.094 m m = 7.372 m m
-$
+#nonum($z_h = 0.693 / 0.094 m m = 7.372 m m$)
 
 Thus, the value of the half-value thickness is $7.37 plus.minus 0.06 m m$.
 = Verification of inverse square law
