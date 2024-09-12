@@ -112,16 +112,79 @@ table.header(
 #set align(left)
 = Determination of mass attenuation coefficient
 
-== Table 2 (Measurement of thickness of plates)
+== Measurement of thickness of plates
 *Zero error on the screw gauge:* 0.00 mm
 
 *Least count of the screw gauge:* 0.01 mm
+
+== Graph
+
+#figure(
+  image("Images/logcorr.png", width:120%),
+  caption: "Linear fit to determine the mass attenutaion coefficient",
+)
+
+The data plotted was fitted with the equation -
+#nonum($y(x) = a x + b$)
+with the fit giving us the values of the coefficients -
+#nonum($a = -0.094 plus.minus 0.008$)
+#nonum($b = 0.06 plus.minus 0.07$)
+The density of lead is known to be $rho = 1.1343 times 10^(4) k g dot m^(-3) = 1.1343 times 10^(-2) g dot m m^(-3)$
+From analysing the expression for the mass attenuation coefficient, we find that -
+#nonum($mu / rho = (0.094) (1/rho) = (0.094) (1/1.1343) (100) g^(-1) m m ^(2) = 8.287 g^(-1) m m ^(2)$)
+
+Thus, the value of the mass attenuation coefficient is found to be $(8.2 plus.minus 0.7) g^(-1) m m ^(2)$.
+
+= Calculation of half value thickness
+Half value thickness is the thickness of the absorber at which the value of the incident intensity is attentuated to half of its initial value.
+
+We note that,
+$
+I_0 / 2 = I_0 exp(-(mu/rho) rho z_h) => z_h = ln(1/2)/(- (mu/rho) rho)  
+$
+Putting in the values, we get,
+$
+z_h = 0.693 / 0.094 m m = 7.372 m m
+$
+
+Thus, the value of the half-value thickness is $7.37 plus.minus 0.06 m m$.
+= Verification of inverse square law
+== Graph
+#figure(
+  image("Images/inversever.png", width:120%),
+  caption: "Verification of Inverse Square Law",
+)
+
+We represent the data in a log(Counts) vs log(distance) graph, given as
+#nonum($&log(I) = a log(x) + b \ 
+  =>&y = a x +b
+  $)
+We fit the data with a linear fit to obtain a to be $-1.72plus.minus 0.03$ and b to be $8.52 plus.minus 0.06$.
+
+
+
+= Possible errors
+The possible errors in this experiment are -
+1. Introduction of secondary radiation sources in the evironment of the experimental setup after taking the background radiation reading and while the experiment is being conducted - This can change the count rate due to sources other than the intended radiation source, thereby affecting the results.
+2. Voltage fluctuation in the electronic instruments used - This may affect the count rate as expressed by the GM counter.
+3. While measuring the mass attenuation coefficient, there were small air gaps between the lead plates. This leads to an error in the counts due to some surface scattering effects. Also, if all the lead plates are not parallel to each other, that would introduce an error in the measurement of the thickness. However, this error should be very minimal, since GM counter is very small.
+
+= Conclusion
+
+We measured the mass attenutation coefficient of gamma rays when passing through Pb using a Geiger muller Counter
+. We also verified the Inverse square law within a marginal degree of error.
+#pagebreak()
+
+= Supplementary 
+
+== Determination of Mass Attenuation Coefficient
+=== Table 1 (Thickness of Plates)
+
 #figure(
   image("Images/thick.jpeg", width:100%),
   caption: "Linear fit to determine the mass attenuation coefficient",
 )
-
-== Table 2 (Count rate vs. Thickness)
+=== Table 2 (Count rate vs. Thickness)
 
 #table(
 columns: (auto,auto,auto,auto,auto,auto),
@@ -159,55 +222,8 @@ table.cell(rowspan: 2)[120], table.cell(rowspan: 2)[11.57], [86],table.cell(rows
 
 table.cell(rowspan: 2)[120], table.cell(rowspan: 2)[12.68], [67],table.cell(rowspan: 2)[70.5], table.cell(rowspan: 2)[0.588],table.cell(rowspan: 2)[0.306],[74],
 )
-
-== Graph
-
+#pagebreak()
+== Verification of Inverse Square Law Data
 #figure(
-  image("Images/logcorr.png", width:120%),
-  caption: "Linear fit to determine the mass attenutaion coefficient",
+  image("Images/gminv.jpg", width:100%),
 )
-
-The data plotted was fitted with the equation -
-#nonum($y(x) = a x + b$)
-with the fit giving us the values of the coefficients -
-#nonum($a = -0.094 plus.minus 0.008$)
-#nonum($b = 0.06 plus.minus 0.07$)
-The density of lead is known to be $rho = 1.1343 times 10^(4) k g dot m^(-3) = 1.1343 times 10^(-2) g dot m m^(-3)$
-From analysing the expression for the mass attenuation coefficient, we find that -
-#nonum($mu / rho = (0.094) (1/rho) = (0.094) (1/1.1343) (100) g^(-1) m m ^(2) = 8.287 g^(-1) m m ^(2)$)
-
-Thus, the value of the mass attenuation coefficient is found to be $(8.2 plus.minus 0.7) g^(-1) m m ^(2)$.
-
-= Calculation of half value thickness
-Half value thickness is the thickness of the absorber at which the value of the incident intensity is attentuated to half of its initial value.
-
-We note that,
-$
-I_0 / 2 = I_0 exp(-(mu/rho) rho z_h) => z_h = ln(1/2)/(- (mu/rho) rho)  
-$
-Putting in the values, we get,
-$
-z_h = 0.693 / 0.094 m m = 7.372 m m
-$
-
-Thus, the value of the half-value thickness is $7.37 plus.minus 0.06 m m$.
-
-= Verification of inverse square law
-#figure(
-  image("Images/inversever.png", width:120%),
-  caption: "Verification of Inverse Square Law",
-)
-
-We represent the data in a log(Counts) vs log(distance) graph, given as
-#nonum($&log(I) = a log(x) + b \ 
-  =>&y = a x +b
-  $)
-We fit the data with a linear fit to obtain a to be $-1.72plus.minus 0.03$ and b to be $8.52 plus.minus 0.06$.
-
-
-
-= Possible errors
-The possible errors in this experiment are -
-1. Introduction of secondary radiation sources in the evironment of the experimental setup after taking the background radiation reading and while the experiment is being conducted - This can change the count rate due to sources other than the intended radiation source, thereby affecting the results.
-2. Voltage fluctuation in the electronic instruments used - This may affect the count rate as expressed by the GM counter.
-3. While measuring the mass attenuation coefficient, there were small air gaps between the lead plates. This leads to an error in the counts due to some surface scattering effects. Also, if all the lead plates are not parallel to each other, that would introduce an error in the measurement of the thickness. However, this error should be very minimal, since GM counter is very small.
