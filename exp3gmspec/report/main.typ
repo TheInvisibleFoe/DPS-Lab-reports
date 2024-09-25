@@ -33,7 +33,7 @@
 // start editing from here
 = Introduction
 The experiment aims to find out the $gamma$ ray spectra for a #Ce using a scintillation detector using 
-a Single Channel Analyser(SCA).
+a Single Channel Analyser (SCA).
 = Gamma Ray Interaction with Matter
 There are three dominant interactions of $gamma$ ray with matter, namely photoelectric effect, compton scattering
 and pair production. Since we dont work with high enough energies, pair production cannot happen. 
@@ -70,6 +70,20 @@ called the *Compton Edge*.
   caption: [Compton effect, Source: The Internet]
 )
 == Pair Production
+#figure(
+  image("pair production.jpg",width: 75%),
+  caption: [Pair production, Source: The Internet]
+)
+
+Pair production is a phenomenon which in this case refers specifically to a photon creating an electron–positron pair near a nucleus. As energy must be conserved, for pair production to occur, the incoming energy of the photon must be above a threshold of at least the total rest mass energy of the two particles created. Thus, the process is only energetically possible if the photon energy exceeds -
+#nonum($2 m_0 c^2 approx 1.03 M e V$)
+For the purposes of conservation of momentum, the process must occur in the proximity of a third body - usually a nucleus.
+Practically, this process is only significant for photon energies exceeding $~ 10 M e V$, so we do not observe the peaks related to the pair production phenomena in our spectrum. The excess energy of the photon is shared as the kinetic energies of the electron-positron pair that is created.
+
+#nonum($E_(e^-) + E_(e^+) = h nu - 2 m_0 c^2$)
+If the gamma ray has enough energy for pair production to occur, we observe a peak at an energy $1.02 M e V approx 2 m_0 c^2$ below the photopeak (assuming that both of the gamma photons produced by the annihilation of the positron do not escape the detector).
+
+It is also known that the crossection of this process scales as the square of the atomic number of the interacting material.
 
 = Scintillation energy detector
 The Energy Spectra of the $gamma$ ray is measured using a scintillation detector. Scintillation literally means
@@ -109,12 +123,14 @@ pulse-height window fixed to map the whole energy spectrum.
 = Pulse height analysis
 The pulse height analysis is presented below.
 #figure(
-  image("plot.jpg"),
+  image("hist_plot.jpg"),
   caption : [Pulse Height Analysis]
 )
 We did 2 RUNS with $20$mV window and changing the baseline by $40$mV for $30$s each. The average of the two runs has been plotted
 with the voltage in the X-axis. We obtain a backscatter peak, the compton edge and at the very end, the photopeak.
 The CRO showed an average pulse height of $1.52$V. The Data table with the two runs with the baseline and step size outline is given in @sup(Supplementary).
+
+*It is to be noted that we get the photopeak at a baseline voltage of $1340 m V$*.
 
 
 = Conclusion
