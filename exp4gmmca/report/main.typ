@@ -20,12 +20,11 @@
 #let Cs = [$attach(#text("Cs"), tl:137,bl:55)$]
 #let Co = [$attach(#text("Co"), tl:137,bl:55)$]
 
-#set page(numbering: none)
+//#set page(numbering: none)
 // Edit this content to your liking
-// #outline()
+//#outline()
 #outline(indent: auto)
 
-#pagebreak()
 #set page(numbering: "1 / 1")
 #counter(page).update(1)
 
@@ -38,7 +37,12 @@ Analyser(MCA) measures all the pulses in all the windows at the same time.
 
 = Theory
 
+We lay out, in brief, the theory behind the decay of the radioactive sources that produce the 
+$gamma$ rays in our interaction, and the Multi Channel analyser.
+
 == Decay Scheme of #Cs and #Co
+
+#include "decay.typ"
 
 
 == Multi Channel Analyser
