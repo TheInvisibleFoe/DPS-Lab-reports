@@ -46,6 +46,7 @@ $gamma$ rays in our interaction, and the Multi Channel analyser.
 
 
 == Multi Channel Analyser
+#include "mca.typ"
 
 = Data
 
