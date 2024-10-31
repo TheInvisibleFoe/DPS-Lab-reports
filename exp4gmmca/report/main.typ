@@ -48,17 +48,24 @@ $gamma$ rays in our interaction, and the Multi Channel analyser.
 == Multi Channel Analyser
 #include "mca.typ"
 
+#include "mca.typ"
+
 = Data
 
-= Plots
+
 
 = Analysis
 
 == Calibration and determination of #Cs peak
 
+#include "calib.typ"
+
 == Photo-peak Efficiency
 
+#include "photo.typ"
+
 == Variation of resolution with PMT Voltage
+#include "PMTres.typ"
 
 = Conclusion
 
