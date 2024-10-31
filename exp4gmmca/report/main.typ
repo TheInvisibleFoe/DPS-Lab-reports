@@ -49,7 +49,6 @@ $gamma$ rays in our interaction, and the Multi Channel analyser.
 
 #include "mca.typ"
 
-= Data
 
 
 
@@ -67,5 +66,10 @@ $gamma$ rays in our interaction, and the Multi Channel analyser.
 #include "PMTres.typ"
 
 = Conclusion
-
+We conclude the experiment by determining the energy of the $gamma$ ray photon emitted by the #Cs atom.
+We have also found out the photo peak efficiency for the peaks in #Co. And in the end we verified that we
+are working at the correct operating voltage.
+#pagebreak()
+= Supplementary
+#figure(image("PMTvariation.png", width :70%))
 
