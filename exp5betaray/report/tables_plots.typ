@@ -35,3 +35,7 @@ compared to that of the #Na source, to make sure we have more close-by datapoint
 
 === Energy corresponding to the maximum count for #Sr source
 The peak of the spectrum was observed to be at an energy of 662.83 keV with the average count of 1471.
+
+= Sources of Error
+
+#include "error_sources.typ"
