@@ -8,9 +8,11 @@ For the #Na source, for each voltage we took 2 runs, for 60 seconds each. The en
 #let results = csv("na-table.csv")
 #table(
   columns: 7,
-  [*Magnetic Field(mT)*], [*Voltage (V)*], [*Current (A)*], [*Counts(Run 1)*],[*Counts(Run 2)*],[*Avg. Counts*],[*Energy (keV)*],
+  [*Magnetic Field(mT)*], [*Voltage (V)*], [*Current (A)*], [*Counts (Run 1)*],[*Counts (Run 2)*],[*Avg. Counts*],[*Energy (keV)*],
   ..results.flatten(),
 )
+
+#pagebreak()
 === Plot of Energy vs Count for #Na Source
 #figure(
  image("na-plot.png", width: 70%), caption: [$beta$-ray spectrum of #Na]

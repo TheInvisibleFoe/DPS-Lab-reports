@@ -1,25 +1,21 @@
-#let par-eq(eq) = {
-  linebreak()
-  box(inset: (y: 0.5em), width: 1fr, eq)
-  linebreak()
-}
-#let nonum(eq) = math.equation(block: true, numbering: none, eq)
-#figure(
-  image("betaspectro.svg", width:120%),caption:[$beta$ spectrometry setup]
-)
 A magnetic $beta$ ray spectrometer is an instrument that is designed to analyze the energy distribution of $beta$ particles emitted from a radioactive source. This type of spectrometer utilizes the phenomena off deflection of charged radiation particle in a magnetic field to discern the energy of the particles that are encountered by a Geiger-Mueller counter - a radiation detector that is not sensitive to the energy information of the incident radiation particles.
 
-The crucial components of the $beta$ particle spectrometer are -
+The crucial components of the $beta$ partile spectrometer are -
 + Power Supply: This is utilized in constant current mode to drive current through a solenoidal coil.
 + Solenoidal coil: The current flowing through the coil creates an approximately uniform magnetic field, whose magnitude can be controlled by varying the current allowed to flow through the coil. The magnitude of the magnetic field can be calculated usin the following equation -
-#nonum($  B = mu n I $)
+$
+  B = mu n I
+$
 Where,
 $B$ = Magnitude of the magnetic field.
 $mu$ = Permeability of the material inside the solenoid.
 $n$ = Number of turns in the solenoid per unit length of the solenoid.
 $I$ = Current flowing through the solenoid.
 + Hall probe/Gaussmeter: It is used to measure the magnitude of the magnetic field present in the region where the $beta$ particles are present - using the Hall Effect. The Hall effect is a funamental phenomenon observed in conductors (and semiconductors) when theya re subjected to a magnetic field perpendicular to the direction of an eelectric current in the material. The effect of this is the generation of a transverve electric potential across the material, which is known as the Hall voltage. This is created due to the charge carriers in the material experiencing a transverse Lorentz force on them due to the magnetic field. This deflects the charge carries moving under the influence of the electric field to one side of the conductor. This accumulation of charges creates an electric field transverse to the original electric field that was present in the material, which manifests in the form of a measurable voltage difference. The Hall voltage can be calculated using the following expression - 
-#par-eq($ V_H = (I B)/(q n d ) $)
+$
+  V_H = (I B)/(q n d)
+$
+Where,
 $V_H$ = Hall voltage
 $I$ = Current flowing through the conductor (in Ampere)
 $B$ = Magnitude of the magnetic field (in Tesla)
