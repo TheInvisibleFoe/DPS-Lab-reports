@@ -31,10 +31,7 @@
 
 = Introduction
 
-In this experiment, we perform $beta$ ray epectroscopy using a scintillation detector and then measure the 
-pulse heights using a multi channel analyser. In the previous experiment we used a single channel 
-analyser by varying the window and baseline to measure pulses within the window. The Multi Channel 
-Analyser(MCA) measures all the pulses in all the windows at the same time.
+In this experiment, we perform $beta$ ray epectroscopy using a GM Counter. We measure the energy of the $beta$ particles emitted by #Na and #Sr. We use this with a Hall probe to measure the energy of the $beta$ particles.
 
 = Theory
 
@@ -56,6 +53,9 @@ $beta$ rays in our interaction.
 
 #include "tables_plots.typ"
 
+
+= Sources of Error
+#include "error_sources.typ"
 = Conclusion
 
 #include "conclusion.typ"
