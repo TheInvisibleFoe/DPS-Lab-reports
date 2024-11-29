@@ -5,7 +5,7 @@
 // #show link: underline
 
 #show: bubble.with(
-  title: [$gamma$ ray absorption in matter by a $gamma$-ray source] ,
+  title: [Study of GM Counter and Counting Statistics using a $gamma$ ray source] ,
   subtitle: "PH3105",
   author: ("Debayan Sarkar","Diptanuj Sarkar","Sabarno Saha"),
   // author: "",
