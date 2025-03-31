@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2025.1.13)  30 MAR 2025 13:16
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2025.1.13)  31 MAR 2025 22:41
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/sab/github/TheInvisibleFoe/PH3105-Lab-reports/DPS-Lab_reports/PH3204/exp-4gates/main
@@ -1281,63 +1281,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 109--109
-[] [] 
- []
-
-
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 120--120
-[] [] 
- []
-
-
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 139--139
-[] [] 
- []
-
-
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 149--149
-[] [] 
- []
-
-[2]
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 170--170
-[] [] 
- []
-
-
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 181--181
-[] [] 
- []
-
-
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 203--203
-[] [] 
- []
-
-
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 214--214
-[] [] 
- []
-
-
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 236--236
-[] [] 
- []
-
-
-Overfull \hbox (62.04115pt too wide) in paragraph at lines 247--247
-[] [] 
- []
-
-[3]
-<./code//gates.png, id=70, 1027.84pt x 1027.84pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<./code//gates.png, id=62, 1027.84pt x 1027.84pt>
 File: ./code//gates.png Graphic file (type png)
 <use ./code//gates.png>
-Package luatex.def Info: ./code//gates.png  used on input line 255.
+Package luatex.def Info: ./code//gates.png  used on input line 258.
 (luatex.def)             Requested size: 397.0649pt x 397.06056pt.
- (./eg1.tex) [4<./code//gates.png>] (./eg2.tex) [5] (./eg3.tex) [6] [7] (./main.aux)
+ [3] (./eg1.tex) [4<./code//gates.png>] (./eg2.tex) (./eg3.tex) [5] [6] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1346,19 +1296,19 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 60769 strings out of 478285
+ 60765 strings out of 478285
  100000,2848258 words of node,token memory allocated
  780 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 109 glue_spec, 8 attribute_list, 2 write nodes
-   avail lists: 1:2,2:5834,3:1564,4:291,5:223,6:172,7:8171,8:11,9:1643,10:9,11:183
- 79257 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:5801,3:1200,4:277,5:228,6:172,7:7846,8:13,9:1721,10:9,11:210
+ 79255 multiletter control sequences out of 65536+600000
  80 fonts using 6276967 bytes
- 108i,21n,106p,10680b,1225s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,21n,106p,10680b,1335s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (7 pages, 486122 bytes).
+Output written on main.pdf (6 pages, 486684 bytes).
 
-PDF statistics: 207 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 131072)
- 152 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 198 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 131072)
+ 144 words of extra memory for PDF output out of 10000 (max. 100000000)
 

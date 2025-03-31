@@ -47,12 +47,10 @@ In this experiment, we aim to study the basic laws of Boolean algebra using logi
 AND, OR, NOT, NAND, NOR, and XOR gates. We will also study the properties of these gates and their applications in digital circuits. Then 
 we will build a few circuits using these gates and verify their truth tables.
 \section{Theory}
-Boolean algebra is just the study of functions that map binary strings to either 0 or 1. The basic operations in Boolean algebra are
-\begin{itemize}
-    \item AND: $Q = A \cdot B$
-    \item OR: $Q = A + B$
-    \item NOT: $Q = \overline{A}$
-\end{itemize}
+Boolean algebra is just the study of functions that map binary strings to either 0 or 1. The basic operations in Boolean algebra are \\
+    AND: $Q = A \cdot B$ \hfill 
+    OR: $Q = A + B$ \hfill 
+    NOT: $Q = \overline{A}$ \\
 We will be studying the properties of these gates and their applications in digital circuits. We will also study the NAND, NOR, and XOR gates.
 \subsection{Gates}
 \subsubsection{AND Gate}
@@ -61,11 +59,11 @@ $Q = A \cdot B = AB$.
 It behaves according to the trieeestd uth table shown below:
 \begin{figure}[H]
         \centering
-        \begin{subfigure}{0.45\textwidth}
+        \begin{subfigure}[b]{0.45\textwidth}
                 \centering
                 \begin{tabular}{|c|c|c|}
                         \hline
-               ieeestd          A & B & Q=AB \\
+                        A & B & Q=AB \\
                         \hline
                         0 & 0 & 0 \\
                         0 & 1 & 0 \\
@@ -94,7 +92,7 @@ The OR Gate is a digital logic gate that implements logical addition. We represe
 truth table for the OR gate is shown below:
 \begin{figure}[H]
         \centering
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{tabular}{|c|c|c|}
                         \hline
@@ -107,9 +105,9 @@ truth table for the OR gate is shown below:
                         \hline
                 \end{tabular}
                 \caption{Truth Table of OR Gate}
-        \end{minipage}
+        \end{subfigure}
         \hfill
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{circuitikz}
                         \draw (0,0) node[ieeestd or port] (myor) {}
@@ -118,7 +116,8 @@ truth table for the OR gate is shown below:
                         (myor.out) node[right] {Q};
                 \end{circuitikz}
                 \caption{Symbol of OR Gate}
-        \end{minipage}
+        \end{subfigure}
+        \caption{Truth Table and Symbol of OR Gate}
 \end{figure}
 We use the IC 7432 to implement the OR gate.
 \subsubsection{NOT Gate}
@@ -126,7 +125,7 @@ The NOT Gate is a digital logic gate that implements logical negation. We repres
 truth table for the NOT gate is shown below:
 \begin{figure}[H]
         \centering
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{tabular}{|c|c|}
                         \hline
@@ -137,9 +136,9 @@ truth table for the NOT gate is shown below:
                         \hline
                 \end{tabular}
                 \caption{Truth Table of NOT Gate}
-        \end{minipage}
+        \end{subfigure}
         \hfill
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{circuitikz}
                         \draw (0,0) node[ieeestd not port] (mynot) {}
@@ -147,7 +146,8 @@ truth table for the NOT gate is shown below:
                         (mynot.out) node[right] {Q};
                 \end{circuitikz}
                 \caption{Symbol of NOT Gate}
-        \end{minipage}
+        \end{subfigure}
+        \caption{Truth Table and Symbol of NOT Gate}
 \end{figure}
 We use the IC 7404 to implement the NOT gate.
 \subsubsection{NAND Gate}
@@ -155,7 +155,7 @@ The NAND Gate is a digital logic gate that implements the logical negation of th
 This gate just inverts the output of the AND gate. The truth table for the NAND gate is shown below:
 \begin{figure}[H]
         \centering
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{tabular}{|c|c|c|}
                         \hline
@@ -168,9 +168,9 @@ This gate just inverts the output of the AND gate. The truth table for the NAND 
                         \hline
                 \end{tabular}
                 \caption{Truth Table of NAND Gate}
-        \end{minipage}
+        \end{subfigure}
         \hfill
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{circuitikz}
                         \draw (0,0) node[ieeestd nand port] (mynand) {}
@@ -179,7 +179,8 @@ This gate just inverts the output of the AND gate. The truth table for the NAND 
                         (mynand.out) node[right] {Q};
                 \end{circuitikz}
                 \caption{Symbol of NAND Gate}
-        \end{minipage}
+        \end{subfigure}
+        \caption{Truth Table and Symbol of NAND Gate}
 \end{figure}
 We use the IC 7400 to implement the NAND gate.
 
@@ -188,7 +189,7 @@ The NOR Gate is a digital logic gate that implements the logical negation of the
 This gate just inverts the output of the OR gate. The truth table for the NOR gate is shown below:
 \begin{figure}[H]
         \centering
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{tabular}{|c|c|c|}
                         \hline
@@ -201,9 +202,9 @@ This gate just inverts the output of the OR gate. The truth table for the NOR ga
                         \hline
                 \end{tabular}
                 \caption{Truth Table of NOR Gate}
-        \end{minipage}
+        \end{subfigure}
         \hfill
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{circuitikz}
                         \draw (0,0) node[ieeestd nor port] (mynor) {}
@@ -212,7 +213,8 @@ This gate just inverts the output of the OR gate. The truth table for the NOR ga
                         (mynor.out) node[right] {Q};
                 \end{circuitikz}
                 \caption{Symbol of NOR Gate}
-        \end{minipage}
+        \end{subfigure}
+        \caption{Truth Table and Symbol of NOR Gate}
 \end{figure}
 We use the IC 7402 to implement the NOR gate.
 \subsubsection{XOR Gate}
@@ -221,7 +223,7 @@ boolean expression for the XOR gate is $Q = A\overline{B} + \overline{A}B$.
 The truth table for the XOR gate is shown below:
 \begin{figure}[H]
         \centering
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{tabular}{|c|c|c|}
                         \hline
@@ -234,9 +236,9 @@ The truth table for the XOR gate is shown below:
                         \hline
                 \end{tabular}
                 \caption{Truth Table of XOR Gate}
-        \end{minipage}
+        \end{subfigure}
         \hfill
-        \begin{minipage}{0.45\textwidth}
+        \begin{subfigure}{0.45\textwidth}
                 \centering
                 \begin{circuitikz}
                         \draw (0,0) node[ieeestd xor port] (myxor) {}
@@ -245,7 +247,8 @@ The truth table for the XOR gate is shown below:
                         (myxor.out) node[right] {Q};
                 \end{circuitikz}
                 \caption{Symbol of XOR Gate}
-        \end{minipage}
+        \end{subfigure}
+        \caption{Truth Table and Symbol of XOR Gate}
 \end{figure}
 We use the IC 7486 to implement the XOR gate.
 \subsection{Pin diagrams of ICs}
@@ -265,23 +268,24 @@ The ICs used here are the 74LSXX series, where LS stands for Low Power Schottky.
 The Simplified boolean expression for the circuit is $Q = \overline{A}B(C+D)$. The truth table for the circuit is shown below:
 \begin{table}[H]
     \centering
-    \caption{Truth Table for \( \mathrm{Q} = \mathrm{\overline{A}\,\overline{C} + \overline{A}\,\overline{D} + \overline{B}} \)}
+    \caption{Truth Table for \( \mathrm{Q} = \overline{\mathrm{A}}\mathrm{B}(\mathrm{C + D}) \)}
     \vspace{0.2cm}
     \begin{tabular}{|c|c|c|c||c|||c|c|c|c||c|}
     \hline
-    \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Q}& \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Q}  \\
+    \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Q} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Q}\\
     \hline
-        0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 1 \\
-        0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 1 \\
-        0 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 \\
-        0 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 \\
-        0 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1 \\
-        0 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 \\
-        0 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 \\
-        0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 \\
-       \hline           
-        \end{tabular}
-    \end{table}
+    0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 \\
+    0 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 0 \\
+    0 & 0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 0 \\
+    0 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 \\
+    0 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 \\
+    0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 0 \\
+    \hline
+    \end{tabular}
+\end{table}
+
 \subsection{Example 2}
 \begin{figure}[H]
         \centering
@@ -289,25 +293,23 @@ The Simplified boolean expression for the circuit is $Q = \overline{A}B(C+D)$. T
         \caption{Circuit Diagram of the given circuit}
 \end{figure}
 The Simplified boolean expression for the above circuit was found out to be
-$\mathrm{Q = \overline{A}\ \overline{B}+ \overline{C} + \overline{D}}$.
+$\mathrm{Q = \overline{B} + \overline{A}B(\overline{C} + \overline{D})}$
 \begin{table}[H]
-\centering
-\caption{Truth Table for \(\mathrm{ \mathrm{Q} = \overline{A}\,\overline{B} + \overline{D} + \overline{C} }\)}
-\vspace{0.2cm}
-\begin{tabular}{|c|c|c|c||c|||c|c|c|c||c|}
-\hline
-\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Y} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Y} \\
-\hline
-0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 1 \\
-0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 1 \\
-0 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 \\
-0 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 0 \\
-0 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1 \\
-0 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 \\
-0 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 \\
-0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 \\
-\hline
-\end{tabular}
+    \centering
+    \caption{Truth Table for $Q = \overline{B} + \overline{A}B(\overline{C} + \overline{D})$ }
+    \begin{tabular}{|c|c|c|c||c|||c|c|c|c||c|}
+    \hline
+        \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Q} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Q}\\ \hline
+        0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 1 \\
+        0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 1 \\
+        0 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 1 \\
+        0 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 \\
+        0 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 \\
+        0 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 \\
+        0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 \\
+        \hline
+    \end{tabular}
 \end{table}
 \subsection{Example 3}
 \begin{figure}[H]
@@ -337,6 +339,8 @@ $\mathrm{Q = \overline{A}\ \overline{B}+ \overline{C} + \overline{D}}$.
         \end{tabular}
 \end{table}
 \section{Results}
-\section{Discussion}
+The truth tables for the individual gates were verified and the simplified boolean expressions for the circuits were found out.
+Then the truth tables were also experimentally verified.
 \section{Conclusion}
+We conclude by verifying the truth tables of the individual gates and the circuits.
 \end{document}
