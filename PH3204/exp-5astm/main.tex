@@ -88,13 +88,13 @@ The frequency and duty cycle of the output waveform can be controlled by adjusti
 The pins of the 555 timer are as follows:
 \begin{itemize}
     \item Pin 1: Ground (GND): This pin is connected to the ground of the circuit.
-    \item Pin 2: Trigger (TRIG) - This pin is used to trigger the timer. A negative pulse on this pin sets the flip-flop, causing the output to go high.
+    \item Pin 2: Trigger (TRIG) - This pin is used to trigger the timer.
     \item Pin 3: Output (OUT) - This pin provides the output of the timer. 
     \item Pin 4: Reset (RESET) - This pin is used to reset the timer. A low signal on this pin resets the flip-flop, causing the output to go low.
-    \item Pin 5: Control Voltage (CTRL) - This pin is used to control the timing of the timer. It is usually connected to a capacitor to filter noise.
+    \item Pin 5: Control Voltage (CTRL) - This pin is used to control the timing of the timer, by changing the threshold voltage usually set at $2V_{cc}/3$. It is usually connected to a capacitor to filter noise.
     \item Pin 6: Threshold (THR) - This pin is used to monitor the voltage across the timing capacitor. When this voltage exceeds 2/3 of the supply voltage, the flip-flop is reset.
     \item Pin 7: Discharge (DISCH) - This pin is used to discharge the timing capacitor. When the flip-flop is reset, this pin is connected to ground, allowing the capacitor to discharge.
-    \item Pin 8: Supply Voltage (VCC) - This pin is connected to the positive supply voltage. The timer operates within a range of 4.5V to 15V.
+    \item Pin 8: Supply Voltage (VCC) - This pin is connected to the positive supply voltage.
 \end{itemize} 
 
 The input and output waveforms of the 555 timer in astable mode are shown below. 

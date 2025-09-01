@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2025.1.13)  20 APR 2025 18:53
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2025.1.13)  20 APR 2025 22:54
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/sab/github/TheInvisibleFoe/PH3105-Lab-reports/DPS-Lab_reports/PH3204/exp-5astm/main
@@ -1340,22 +1340,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<waveforms.png, id=29, 296.10625pt x 228.855pt>
+<waveforms.png, id=35, 296.10625pt x 228.855pt>
 File: waveforms.png Graphic file (type png)
 <use waveforms.png>
 Package luatex.def Info: waveforms.png  used on input line 103.
 (luatex.def)             Requested size: 148.90028pt x 115.08371pt.
- [2<./waveforms.png>]
+
 Overfull \hbox (10.56229pt too wide) in paragraph at lines 130--149
  [][] 
  []
 
-<expt_vs_theo.png, id=45, 619.3539pt x 409.0482pt>
+[2<./waveforms.png>]
+<expt_vs_theo.png, id=53, 619.3539pt x 409.0482pt>
 File: expt_vs_theo.png Graphic file (type png)
 <use expt_vs_theo.png>
 Package luatex.def Info: expt_vs_theo.png  used on input line 182.
 (luatex.def)             Requested size: 397.0649pt x 262.23933pt.
-[3] [4<./expt_vs_theo.png>] (./main.aux)
+ [3] [4<./expt_vs_theo.png>] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1368,15 +1369,15 @@ Here is how much of LuaTeX's memory you used:
  100000,2848258 words of node,token memory allocated
  804 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 13 attribute, 108 glue_spec, 13 attribute_list, 2 write nodes
-   avail lists: 1:2,2:2899,3:1291,4:155,5:269,6:134,7:8545,8:36,9:1916,10:15,11:338
+   avail lists: 1:2,2:4018,3:1313,4:209,5:272,6:148,7:8456,8:36,9:1848,10:15,11:356
  82646 multiletter control sequences out of 65536+600000
  79 fonts using 6145215 bytes
  108i,21n,106p,10679b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (4 pages, 227249 bytes).
+Output written on main.pdf (4 pages, 227648 bytes).
 
-PDF statistics: 169 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
+PDF statistics: 172 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  22 named destinations out of 1000 (max. 131072)
  80 words of extra memory for PDF output out of 10000 (max. 100000000)
 
